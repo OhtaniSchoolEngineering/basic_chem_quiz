@@ -121,13 +121,24 @@
             <h1 id="quiz-header-title" class="text-base font-bold text-emerald-600 tracking-wide">化学基礎チェック</h1>
             <!-- ▼ アコーディオンボタン -->
             <div class="relative inline-block text-left">
-              <button onclick="toggleAppMenu(event)" class="px-2 py-0.5 text-[10px] font-bold bg-gray-100 text-gray-600 border border-gray-200 rounded-full hover:bg-gray-200 transition flex items-center gap-1 focus:outline-none whitespace-nowrap">
+              <button onclick="toggleAppMenu(event)"
+                class="px-2 py-0.5 text-[10px] font-bold bg-gray-100 text-gray-600 border border-gray-200 rounded-full hover:bg-gray-200 transition flex items-center gap-1 focus:outline-none whitespace-nowrap">
                 他の単元 ▾
               </button>
               <!-- ▼ 展開されるメニュー（初期状態は非表示: hidden） -->
-              <div id="app-menu-dropdown" class="hidden absolute left-0 mt-1.5 w-40 bg-white border border-gray-200 rounded-xl shadow-lg py-1.5 z-[100] text-xs">
-                <a href="https://ohtanischoolengineering.github.io/organic_polymer/" class="block px-3 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition font-bold">
-                  🧪 有機・高分子版
+              <div id="app-menu-dropdown"
+                class="hidden absolute left-0 mt-1.5 w-40 bg-white border border-gray-200 rounded-xl shadow-lg py-1.5 z-[100] text-xs">
+                <a href="#"
+                  class="block px-3 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition font-bold">
+                  🧪 理論化学
+                </a>
+                <a href="https://ohtanischoolengineering.github.io/inorganic_quiz/"
+                  class="block px-3 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition font-bold">
+                  🧪 無機化学
+                </a>
+                <a href="https://ohtanischoolengineering.github.io/organic_polymer/"
+                  class="block px-3 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition font-bold">
+                  🧪 有機・高分子
                 </a>
               </div>
             </div>
@@ -1388,7 +1399,7 @@
       }
     }
 
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
       const dropdown = document.getElementById('app-menu-dropdown');
       if (dropdown && !dropdown.classList.contains('hidden')) {
         dropdown.classList.add('hidden');
